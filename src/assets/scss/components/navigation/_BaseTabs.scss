@@ -1,0 +1,47 @@
+@use '../../settings/variables' as *;
+
+.tabs-ag {
+  box-shadow: 0px 4px 16px -4px #0000000D;
+  box-shadow: 0px 2px 8px -2px #0000000D;
+  background: #FFFFFF;
+  border-radius: 32px;
+  gap: 4px;
+  padding: 5px;
+}
+
+.tabs-ag button {
+    flex: 1;
+    border-radius: 24px;
+    display: flex;       
+    justify-content: center; 
+    align-items: center;
+    border: none;
+    outline: none;
+    font-family: $font-base;
+    font-weight: 500;
+    font-size: $font-size-lg;
+    padding: 8px 0px;
+    color: $gris-100;
+}
+
+.tabs-ag button.p-tab:not(.p-tab-active):not(.p-disabled):hover {
+  background: $gris-20;
+  color: $gris-100;
+}
+
+.tabs-ag button.p-tab-active {
+    background: linear-gradient(90deg, #61961D 0%, #79BC24 100%);
+    color: white;
+    font-weight: 600;
+}
+.tabs-ag .p-tablist-tab-list {
+    gap: 4px;
+    border: none;
+}
+.tabs-ag .p-tablist-active-bar{
+    display: none;
+}
+
+.tabs-ag-content {
+    gap: 13px;
+}

@@ -1,0 +1,63 @@
+@use '../../settings/variables' as *;
+@use '../../settings/fonts' as *;
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem; // 16px 64px
+  background: white;
+  border-bottom: 0.8px solid #E5E7EB;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 
+    0px 4px 16px rgba(0, 0, 0, 5%),
+    0px 2px 8px rgba(0, 0, 0, 5%);
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem; // 10px
+  }
+
+  &__title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem; // 28px
+    font-weight: 600;
+    line-height: 2.5rem; // 40px
+    letter-spacing: 0;
+    background: linear-gradient(90deg, #768B25 0%, #008236 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+  }
+
+  &__subtitle-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; // 8px
+  }
+
+  &__subtitle-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $verde-50;
+  }
+
+  &__subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem; // 12px
+    font-weight: 400;
+    line-height: 1rem; // 16px
+    color: $gris-70;
+    margin: 0;
+  }
+}

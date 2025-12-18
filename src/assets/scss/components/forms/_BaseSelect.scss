@@ -1,0 +1,79 @@
+@use '../../settings/variables' as *;
+
+.select-ag {
+    border-radius: 50px;
+}
+
+.select-ag .p-select-label.p-placeholder{
+    color: $gris-30;
+    font-weight: 400;
+    font-size: $font-size-md;
+    padding: 0px;
+    gap: 8px;
+}
+
+.p-select-overlay {
+    border-radius: 12px;
+    border: 1px solid $verde-40;
+}
+
+.p-select-option {
+    padding: 8px 16px;
+}
+
+.p-select-option:not(.p-select-option-selected):not(.p-disabled).p-focus {
+    background: $hover-color;
+}
+
+.p-select-option-label{
+    font-weight: 400;
+    font-size: $font-size-md;
+    color: $gris-100;
+}
+
+.select-ag .p-select-label {
+    font-weight: 500;
+    font-size: $font-size-md;
+    color: $gris-90;
+    padding: 0px;
+    gap: 8px;
+}
+
+.p-select-option-content {
+  display: flex;
+  align-items: center;
+}
+
+.p-select-option-label {
+  order: 1;
+}
+
+.p-select-option-check-icon {
+  order: 2;
+  margin-left: auto;
+}
+
+
+.p-select-option-blank-icon {
+  order: 2;
+  margin-left: auto;
+}
+
+.p-select-option-check-icon path,
+.p-select-option-check-icon line,
+.p-select-option-check-icon polyline,
+.p-select-option-check-icon rect,
+.p-select-option-check-icon circle {
+  display: none;
+}
+
+.p-select-option-selected .p-select-option-check-icon {
+  background-image: url('@/assets/icons/checkmark-redondo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+
+
+

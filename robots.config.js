@@ -1,0 +1,15 @@
+export default [
+  { Comment: 'robots.txt' },
+  { BlankLine: true },
+  { UserAgent: '*' },
+  { Disallow: '/__sitemap__/' },
+  { Disallow: '/_nuxt/' },
+  { Disallow: '/api/' },
+  { Disallow: '/contents/' },
+  { Disallow: '/sitemap.xml/' },
+  { Disallow: '/_payload.json' },
+  { BlankLine: true },
+  { Allow: ' /contents/assets/' },
+  { BlankLine: true },
+  // { Sitemap: 'https://www.agromanage.es/es-ES-sitemap.xml' },
+];

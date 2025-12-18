@@ -1,0 +1,37 @@
+@use '../../settings/variables' as *;
+
+.select-button-ag {
+    background: #FFFC;
+    border: 0.8px solid #B9B9B9;
+    border-radius: 14px;
+}
+
+
+.select-button-ag .p-togglebutton {
+    background: transparent;
+    border: none;
+}
+
+.select-button-ag 
+.p-togglebutton:not(:disabled):not(.p-togglebutton-checked):hover {
+  background: transparent;
+}
+
+.select-button-ag 
+.p-togglebutton:not(:disabled):not(.p-togglebutton-checked):hover .p-togglebutton-content {
+  background: #ECECED;
+  color: #525252
+}
+
+.select-button-ag .p-togglebutton .p-togglebutton-content {
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.select-button-ag .p-togglebutton-checked .p-togglebutton-content {
+    background: $verde-50;
+    color: white;
+    border-radius: 10px;
+    padding: 8px;
+}
+

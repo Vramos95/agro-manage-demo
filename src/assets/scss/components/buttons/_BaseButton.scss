@@ -1,0 +1,547 @@
+@use '../../settings/variables' as *;
+@use '../../settings/fonts' as *;
+
+.p-button {
+  font-family: $font-base;
+  font-weight: 600;
+  border-radius: 24px;
+}
+
+// Botón Primary
+.btn-primary-ag {
+  background: $verde-50;
+  border-color: $verde-50;
+  color: white;
+  min-width: 11.5625rem; // 185px
+  min-height: 2.5rem; // 40px
+  height: auto;
+  border-radius: 24px;
+
+  &:hover:not(:disabled) {
+    background: $verde-80;
+    border-color: $verde-80;
+  }
+
+  &:active:not(:disabled) {
+    background: $verde-100;
+    border-color: $verde-100;
+  }
+
+  &:disabled {
+    opacity: 1;
+    background: $gris-30;
+    border-color: $gris-30;
+    color: $gris-50;
+    cursor: not-allowed;
+  }
+}
+
+// Botón Primary con icono
+.btn-primary-icon-ag {
+  background: $verde-50;
+  border-color: $verde-50;
+  color: white;
+  width: auto;
+  height: auto;
+  min-height: 2.5rem; // 40px
+  padding: 0.5rem 2rem 0.5rem 1rem; // 8px 32px 8px 16px
+  gap: 0.625rem; // 10px
+  border-radius: 24px;
+
+  &:hover:not(:disabled) {
+    background: $verde-80;
+    border-color: $verde-80;
+  }
+
+  &:active:not(:disabled) {
+    background: $verde-100;
+    border-color: $verde-100;
+  }
+
+  &:disabled {
+    opacity: 1;
+    background: $gris-30;
+    border-color: $gris-30;
+    color: $gris-50;
+    cursor: not-allowed;
+  }
+
+  :deep(.p-button-icon) {
+    font-size: 1rem; // 16px
+  }
+}
+
+// Botón Secondary
+.btn-secondary-ag {
+  background: white;
+  border-color: $gris-50;
+  color: $gris-50;
+  border-width: 1px;
+  width: 11.5625rem; // 185px
+  min-height: 2.5rem; // 40px
+  height: auto;
+  border-radius: 24px;
+
+  &:hover:not(:disabled) {
+    background: $gris-20;
+    border-color: $gris-50;
+    color: $gris-50;
+  }
+
+  &:active:not(:disabled) {
+    background: $verde-100;
+    border-color: $verde-100;
+    color: white;
+  }
+
+  &:disabled {
+    opacity: 1;
+    background: $gris-30;
+    border-color: $gris-30;
+    color: $gris-50;
+    cursor: not-allowed;
+  }
+}
+
+// Botón Secondary con icono
+.btn-secondary-icon-ag {
+  background: white;
+  border-color: $gris-50;
+  color: $gris-50;
+  border-width: 1px;
+  height: auto;
+  min-height: 2.5rem; // 40px
+  padding: 0.5rem 2rem; // 8px 32px
+  gap: 0.625rem; // 10px
+  border-radius: 24px;
+
+  &:hover:not(:disabled) {
+    background: $gris-20;
+    border-color: $gris-50;
+    color: $gris-50;
+  }
+
+  &:active:not(:disabled) {
+    background: $verde-100;
+    border-color: $verde-100;
+    color: white;
+  }
+
+  &:disabled {
+    opacity: 1;
+    background: $gris-30;
+    border-color: $gris-30;
+    color: $gris-50;
+    cursor: not-allowed;
+  }
+
+  :deep(.p-button-icon) {
+    font-size: 1rem; // 16px
+  }
+}
+
+// Botón Danger
+.btn-danger-ag {
+  background: #DE1135;
+  border-color: #DE1135;
+  color: white;
+  width: 11.5625rem; // 185px
+  min-height: 2.5rem; // 40px
+  height: auto;
+  border-radius: 24px;
+
+  &:hover:not(:disabled) {
+    color: #E45656;
+    background: #FFEBEB;
+    border-color: #FFEBEB;
+  }
+
+  &:active:not(:disabled) {
+    color: white;
+    background: #6D1B1D;
+    border-color: #6D1B1D;
+  }
+
+  &:disabled {
+    opacity: 1;
+    background: $gris-30;
+    border-color: $gris-30;
+    color: $gris-50;
+    cursor: not-allowed;
+  }
+}
+
+// Botón Historial
+.btn-historial-ag {
+  background: $verde-50;
+  border-color: $verde-50;
+  color: white;
+  width: auto;
+  min-width: 7.8125rem; // 125px
+  height: auto;
+  min-height: 2.5rem; // 40px
+  padding: 0.5rem 2rem 0.5rem 1rem; // 8px 32px 8px 16px
+  gap: 0.625rem; // 10px
+  border-radius: 24px;
+
+  &:hover:not(:disabled) {
+    background: $verde-80;
+    border-color: $verde-80;
+  }
+
+  &:active:not(:disabled) {
+    background: $verde-100;
+    border-color: $verde-100;
+  }
+
+  &:disabled {
+    opacity: 1;
+    background: $gris-30;
+    border-color: $gris-30;
+    color: $gris-50;
+    cursor: not-allowed;
+  }
+
+  :deep(.p-button-icon) {
+    font-size: 1rem; // 16px
+  }
+}
+
+// Botón Logout
+.btn-logout-ag {
+  background: white;
+  border-color: $gris-50;
+  color: $gris-50;
+  border-width: 1px;
+  width: 11.5625rem; // 185px
+  min-height: 2.5rem; // 40px
+  height: auto;
+  border-radius: 24px;
+
+  &:hover:not(:disabled) {
+    background: $gris-20;
+    border-color: $gris-50;
+    color: $gris-50;
+  }
+
+  &:active:not(:disabled) {
+    background: $gris-70;
+    border-color: $gris-70;
+    color: white;
+  }
+
+  &:disabled {
+    opacity: 1;
+    background: $gris-30;
+    border-color: $gris-30;
+    color: $gris-50;
+    cursor: not-allowed;
+  }
+}
+
+// Botón Back
+.btn-back-ag {
+  width: 3rem; // 48px
+  height: 3rem; // 48px
+  min-width: 3rem;
+  min-height: 3rem;
+  padding: 0;
+  border-radius: 100%;
+  background: white;
+  border: none;
+  color: $gris-70;
+
+  &:hover:not(:disabled) {
+    background: $gris-20;
+    border: none;
+    color: $gris-70;
+  }
+
+  &:active:not(:disabled) {
+    background: $gris-70;
+    border: none;
+    color: white;
+  }
+
+  &:disabled {
+    opacity: 1;
+    background: white;
+    border: none;
+    color: $gris-30;
+    cursor: not-allowed;
+  }
+}
+
+// Botón Delete
+.btn-delete-ag {
+  width: 2rem; // 32px
+  height: 2rem; // 32px
+  min-width: 2rem;
+  min-height: 2rem;
+  padding: 0;
+  border-radius: 0.625rem; // 10px
+  background: white;
+  border: none;
+  color: $verde-60;
+
+  &:hover:not(:disabled) {
+    background: #FFEBEB;
+    border: none;
+    color: #E45656;
+  }
+
+  &:active:not(:disabled) {
+    background: #DE1135;
+    border: none;
+    color: white;
+  }
+
+  &:disabled {
+    opacity: 1;
+    background: white;
+    border: none;
+    color: $gris-30;
+    cursor: not-allowed;
+  }
+
+  :deep(.p-button-icon) {
+    font-size: 1rem; // 16px
+  }
+}
+
+// Botón Ambiente
+.btn-ambiente-ag {
+  width: auto;
+  min-width: 7.8125rem; // 125px
+  height: 2.25rem; // 36px
+  min-height: 2.25rem;
+  padding: 0.5rem 2rem; // 8px 32px
+  border-radius: 1.5rem; // 24px
+  background: white;
+  border: none;
+  color: $gris-70;
+  gap: 0.5rem; // 8px
+  font-weight: 600;
+  box-shadow: none;
+
+  svg {
+    fill: currentColor;
+    color: $gris-70;
+  }
+
+  &:hover:not(:disabled) {
+    background: $gris-20;
+    border: none;
+    color: $gris-70;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+
+    svg {
+      color: $gris-70;
+    }
+  }
+
+  &:active:not(:disabled) {
+    background: $verde-60;
+    border: none;
+    color: white;
+    box-shadow: none;
+
+    svg {
+      color: white;
+    }
+  }
+
+  &:disabled {
+    opacity: 1;
+    background: $gris-30;
+    border: none;
+    color: $gris-50;
+    cursor: not-allowed;
+    box-shadow: none;
+
+    svg {
+      color: $gris-50;
+    }
+  }
+}
+
+// Botón Suelo
+.btn-suelo-ag {
+  width: auto;
+  min-width: 6.25rem; // 100px
+  height: 2.25rem; // 36px
+  min-height: 2.25rem;
+  padding: 0.5rem 2rem; // 8px 32px
+  border-radius: 1.5rem; // 24px
+  background: white;
+  border: none;
+  color: $gris-70;
+  gap: 0.5rem; // 8px
+  font-weight: 600;
+  box-shadow: none;
+
+  svg {
+    fill: currentColor;
+    color: $gris-70;
+  }
+
+  &:hover:not(:disabled) {
+    background: $gris-20;
+    border: none;
+    color: $gris-70;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+
+    svg {
+      color: $gris-70;
+    }
+  }
+
+  &:active:not(:disabled) {
+    background: $verde-60;
+    border: none;
+    color: white;
+    box-shadow: none;
+
+    svg {
+      color: white;
+    }
+  }
+
+  &:disabled {
+    opacity: 1;
+    background: $gris-30;
+    border: none;
+    color: $gris-50;
+    cursor: not-allowed;
+    box-shadow: none;
+
+    svg {
+      color: $gris-50;
+    }
+  }
+}
+
+// Botón Planta
+.btn-planta-ag {
+  width: auto;
+  min-width: 6.4375rem; // 103px
+  height: 2.25rem; // 36px
+  min-height: 2.25rem;
+  padding: 0.5rem 2rem; // 8px 32px
+  border-radius: 1.5rem; // 24px
+  background: white;
+  border: none;
+  color: $gris-70;
+  gap: 0.5rem; // 8px
+  font-weight: 600;
+  box-shadow: none;
+
+  svg {
+    fill: currentColor;
+    color: $gris-70;
+  }
+
+  &:hover:not(:disabled) {
+    background: $gris-20;
+    border: none;
+    color: $gris-70;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+
+    svg {
+      color: $gris-70;
+    }
+  }
+
+  &:active:not(:disabled) {
+    background: $verde-60;
+    border: none;
+    color: white;
+    box-shadow: none;
+
+    svg {
+      color: white;
+    }
+  }
+
+  &:disabled {
+    opacity: 1;
+    background: $gris-30;
+    border: none;
+    color: $gris-50;
+    cursor: not-allowed;
+    box-shadow: none;
+
+    svg {
+      color: $gris-50;
+    }
+  }
+}
+
+// Botón solo icono
+.btn-icon-only-ag {
+  background-color: white;
+  border-color: white;
+  color: $verde-50;
+  width: 2rem; // 32px
+  height: 2rem; // 32px
+  min-width: 2rem;
+  min-height: 2rem;
+  padding: 0;
+  border-radius: 0.625rem; // 10px
+
+  &:hover:not(:disabled) {
+    background: $verde-20;
+    border-color: $verde-20;
+    color: $verde-50;
+  }
+
+  &:active:not(:disabled) {
+    background: $verde-60;
+    border-color: $verde-60;
+    color: white;
+  }
+
+  &:disabled {
+    opacity: 1;
+    background: $gris-30;
+    border-color: $gris-30;
+    color: $gris-50;
+    cursor: not-allowed;
+  }
+
+  :deep(.p-button-icon) {
+    font-size: 1rem; // 16px
+  }
+}
+
+// Botón solo texto
+.btn-text-ag {
+  background: transparent;
+  border-color: transparent;
+  color: $verde-50;
+  width: auto;
+  min-width: 3rem; // 48px
+  height: 1.5rem; // 24px
+  padding: 0;
+  border-radius: 0;
+
+  &:hover:not(:disabled) {
+    background: transparent;
+    border-color: transparent;
+    color: $verde-80;
+  }
+
+  &:active:not(:disabled) {
+    background: transparent;
+    border-color: transparent;
+    color: $verde-100;
+  }
+
+  &:disabled {
+    opacity: 1;
+    background: transparent;
+    border-color: transparent;
+    color: $gris-50;
+    cursor: not-allowed;
+  }
+}

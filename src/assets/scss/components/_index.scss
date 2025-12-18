@@ -1,0 +1,19 @@
+// Componentes visuales
+
+//buttons
+@forward 'buttons/BaseButton';
+
+//forms
+@forward 'forms/BaseInputText';
+@forward 'forms/BaseSelect';
+@forward 'forms/FormField';
+
+//navigation
+@forward 'navigation/BaseTabs';
+@forward 'navigation/BaseBreadCrumb';
+@forward 'navigation/BaseSelectButton';
+
+//layout
+@forward 'layout/TopBar';
+@forward 'layout/PageHeader';
+

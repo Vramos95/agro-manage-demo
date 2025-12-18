@@ -1,0 +1,21 @@
+@use '../../settings/variables' as *;
+
+.breadcrumb-ag-link {
+  text-decoration: none;
+  font-size: $font-size-sm;
+  font-weight: 400;
+  color: #6A7282
+}
+
+.breadcrumb-ag-link.active {
+  color: $verde-60;
+}
+
+.breadcrumb-ag {
+    background-color: transparent;
+    padding: 0;
+}
+
+.breadcrumb-ag .p-breadcrumb-separator {
+    color: #6A7282
+}

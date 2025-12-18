@@ -1,0 +1,24 @@
+@use '../../settings/variables' as *;
+
+.page-header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 0.50rem; // 8px
+    }
+
+
+    &__subtitle {
+        font-family: $font-base;
+        font-size: 1rem; // 16px
+        font-weight: 400;
+        line-height: 1.5rem; // 24px
+        color: $gris-70;
+        margin: 0;
+    }
+}

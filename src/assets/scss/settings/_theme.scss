@@ -1,0 +1,9 @@
+@use 'variables' as *;
+
+// Variables de tema
+$theme-light-bg: #fff;
+$theme-light-text: $gris-100;
+$theme-dark-bg: #222;
+$theme-dark-text: #f2f2f3;
+
+// Puedes añadir aquí mixins o clases para alternar temas

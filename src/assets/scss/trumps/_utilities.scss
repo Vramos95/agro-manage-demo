@@ -1,0 +1,517 @@
+@use '../settings/variables' as *;
+
+// ============================================================
+// LAYOUT UTILITIES
+// ============================================================
+
+.u-absolute {
+  position: absolute;
+}
+
+.u-relative {
+  position: relative;
+}
+
+.u-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.u-flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.u-flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.u-flexWrap {
+  flex-wrap: wrap;
+}
+
+.u-flex1 {
+  flex: 1 1 0%;
+}
+
+.u-flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.u-alignStart {
+  align-items: flex-start;
+}
+
+.u-alignEnd {
+  align-items: flex-end;
+}
+
+.u-alignCenter {
+  align-items: center;
+}
+
+.u-alignStretch {
+  align-items: stretch;
+}
+
+.u-alignBaseline {
+  align-items: baseline;
+}
+
+.u-justifyCenter {
+  justify-content: center;
+}
+
+.u-justifyEnd {
+  justify-content: flex-end;
+}
+
+.u-justifyStart {
+  justify-content: flex-start;
+}
+
+.u-justifyBetween {
+  justify-content: space-between;
+}
+
+.u-justifyAround {
+  justify-content: space-around;
+}
+
+.u-justifyEvenly {
+  justify-content: space-evenly;
+}
+
+// ============================================================
+// TEXT UTILITIES
+// ============================================================
+
+.u-textNotUnderlined {
+  text-decoration: none;
+}
+
+.u-textUppercase {
+  text-transform: uppercase;
+}
+
+.u-textThin {
+  font-weight: 400;
+}
+
+.u-textSemibold {
+  font-weight: 600;
+}
+
+.u-textBold {
+  font-weight: 700;
+}
+
+.u-subtitle {
+  font-size: 0.875rem;
+}
+
+.u-textCenter {
+  text-align: center;
+}
+
+.u-textRight {
+  text-align: right;
+}
+
+// ============================================================
+// SPACING UTILITIES (MARGINS)
+// ============================================================
+
+.u-marginLeft2 {
+  margin-left: 0.5rem;
+}
+
+.u-marginLeft3 {
+  margin-left: 0.75rem;
+}
+
+.u-marginLeft4 {
+  margin-left: 1rem;
+}
+
+.u-marginRight2 {
+  margin-right: 0.5rem;
+}
+
+.u-marginRight3 {
+  margin-right: 0.75rem;
+}
+
+.u-marginRight4 {
+  margin-right: 1rem;
+}
+
+.u-marginX2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.u-marginX4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.u-marginY0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.u-marginY2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.u-marginY4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.u-marginTop2 {
+  margin-top: 0.5rem;
+}
+
+.u-marginTop4 {
+  margin-top: 1rem;
+}
+
+.u-marginTop8 {
+  margin-top: 2rem;
+}
+
+.u-marginBottom2 {
+  margin-bottom: 0.5rem;
+}
+
+.u-marginBottom4 {
+  margin-bottom: 1rem;
+}
+
+.u-marginBottom8 {
+  margin-bottom: 2rem;
+}
+
+// ============================================================
+// GAP UTILITIES
+// ============================================================
+
+.u-gap0 {
+  gap: 0;
+}
+
+.u-gap1 {
+  gap: 0.25rem;
+}
+
+.u-gap2 {
+  gap: 0.5rem;
+}
+
+.u-gap4 {
+  gap: 1rem;
+}
+
+.u-gap6 {
+  gap: 1.5rem;
+}
+
+.u-gap8 {
+  gap: 2rem;
+}
+
+.u-gap10 {
+  gap: 2.5rem;
+}
+
+// ============================================================
+// PADDING UTILITIES
+// ============================================================
+
+.u-paddingAll2 {
+  padding: 0.5rem;
+}
+
+.u-paddingAll4 {
+  padding: 1rem;
+}
+
+.u-paddingAll8 {
+  padding: 2rem;
+}
+
+.u-paddingX0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.u-paddingX2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.u-paddingX4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.u-paddingX8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.u-paddingX10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.u-paddingX16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.u-paddingY0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.u-paddingY1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.u-paddingY2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.u-paddingY3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.u-paddingY4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.u-paddingY5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.u-paddingY6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.u-paddingY7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.u-paddingY8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.u-paddingLeft2 {
+  padding-left: 0.5rem;
+}
+
+.u-paddingLeft4 {
+  padding-left: 1rem;
+}
+
+.u-paddingLeft8 {
+  padding-left: 2rem;
+}
+
+.u-paddingRight2 {
+  padding-right: 0.5rem;
+}
+
+.u-paddingRight4 {
+  padding-right: 1rem;
+}
+
+.u-paddingRight8 {
+  padding-right: 2rem;
+}
+
+// ============================================================
+// SIZE UTILITIES
+// ============================================================
+
+.u-heightScreen {
+  height: 100vh;
+}
+
+.u-heightFull {
+  height: 100%;
+}
+
+.u-maxHeightFull {
+  max-height: 100%;
+  width: 100%;
+}
+
+.u-minHeightFull {
+  min-height: 100%;
+}
+
+.u-widthOneThird {
+  width: 33.333333%;
+  min-width: 33.333333%;
+  max-width: 33.333333%;
+}
+
+.u-widthFull {
+  width: 100%;
+}
+
+.u-widthHalf {
+  width: 50%;
+}
+
+.u-minWidthHalf {
+  min-width: 50%;
+}
+
+// ============================================================
+// POSITION UTILITIES
+// ============================================================
+
+.u-top16 {
+  top: 4rem;
+}
+
+.u-right2 {
+  right: 0.5rem;
+}
+
+.u-z100 {
+  z-index: 1000;
+}
+
+// ============================================================
+// BORDER UTILITIES
+// ============================================================
+
+.u-border0 {
+  border: 0;
+}
+
+.u-borderRight0 {
+  border-right: 0;
+  box-shadow: none;
+}
+
+.u-roundedPill {
+  border-radius: 1.5rem;
+}
+
+// ============================================================
+// GRID UTILITIES
+// ============================================================
+
+// Mantengo el comportamiento final que tenías: 12 columnas
+.u-grid2Cols {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+.u-columns1 {
+  grid-column: span 1;
+}
+
+.u-columns2 {
+  grid-column: span 2;
+}
+
+.u-columns3 {
+  grid-column: span 3;
+}
+
+.u-columns4 {
+  grid-column: span 4;
+}
+
+.u-columns5 {
+  grid-column: span 5;
+}
+
+.u-columns6 {
+  grid-column: span 6;
+}
+
+.u-columns7 {
+  grid-column: span 7;
+}
+
+.u-columns8 {
+  grid-column: span 8;
+}
+
+.u-columns9 {
+  grid-column: span 9;
+}
+
+.u-columns10 {
+  grid-column: span 10;
+}
+
+.u-columns11 {
+  grid-column: span 11;
+}
+
+.u-columns12 {
+  grid-column: span 12;
+}
+
+.u-rows1 {
+  grid-row: span 1;
+}
+
+.u-rows2 {
+  grid-row: span 2;
+}
+
+.u-rows3 {
+  grid-row: span 3;
+}
+
+// ============================================================
+// MISC UTILITIES
+// ============================================================
+
+.u-cursorPointer {
+  cursor: pointer;
+}
+
+.u-circle {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+}
+
+.u-divider--vertical {
+  width: 1px;
+  height: 100%;
+  background-color: #ffffff30;
+}
+
+.u-divider--horizontal {
+  width: 100%;
+  margin: 0 auto;
+  height: 1px;
+  background-color: #00000020;
+}

@@ -1,0 +1,49 @@
+// Variables globales del proyecto
+// Puedes añadir aquí otras variables específicas del proyecto
+
+// Verde
+$verde-10: #f2f9e9;
+$verde-20: #e8f5de;
+$verde-30: #d5eabb;
+$verde-40: #79bc24;
+$verde-50: #6da920;
+$verde-60: #61961d;
+$verde-70: #5a8d1b;
+$verde-80: #497116;
+$verde-90: #385510;
+$verde-100: #2a420d;
+
+// Gris
+$gris-10: #f2f2f3;
+$gris-20: #ececed;
+$gris-30: #d7d8da;
+$gris-40: #7d8087;
+$gris-50: #71737a;
+$gris-60: #64666c;
+$gris-70: #5e6065;
+$gris-80: #4b4d51;
+$gris-90: #383a3d;
+$gris-100: #2c2d2f;
+
+// Otros colores
+$rojo: #DE1135;
+$rojo2: #F9B7C3;
+$hover-color: #EBF5DE;
+
+// Variables y estilos de tipografía
+$font-base: 'Poppins', sans-serif;
+$font-heading: 'Poppins', sans-serif;
+
+// Variables de tema
+$theme-light-bg: #fff;
+$theme-light-text: $gris-100;
+$theme-dark-bg: #222;
+$theme-dark-text: #f2f2f3;
+
+// Tamaños de fuente
+$font-size-xs: 0.75rem; // 12px
+$font-size-sm: 0.875rem; // 14px
+$font-size-md: 1rem; // 16px
+$font-size-lg: 1.125rem; // 18px
+$font-size-xl: 1.25rem; // 20px
+$font-size-2xl: 1.5rem; // 24px
