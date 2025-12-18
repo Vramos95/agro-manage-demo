@@ -21,7 +21,7 @@
           v-model="modelValueLocal"
           :placeholder="placeholder"
           class="u-widthFull"
-          :inputClass="['field-ag', 'input-text-ag', 'u-widthFull', inputClass, errorClass]"
+          :inputClass="['field-ag-icon', 'input-text-ag', 'u-widthFull', inputClass, errorClass]"
           :aria-describedby="id ? `${id}-help` : undefined"
           toggleMask
           :feedback="false"
@@ -31,7 +31,7 @@
           :id="id"
           v-model="modelValueLocal"
           :placeholder="placeholder"
-          :class="['field-ag', 'input-text-ag', 'u-widthFull', inputClass, errorClass]"
+          :class="['field-ag-icon', 'input-text-ag', 'u-widthFull', inputClass, errorClass]"
           :aria-describedby="id ? `${id}-help` : undefined"
         />
       </IconField>
