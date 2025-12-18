@@ -165,6 +165,9 @@ export default defineNuxtConfig({
         preset: myPreset,
         prefix: 'p',
         darkModeSelector: '.dark-mode',
+        options: {
+          cssLayer: true
+        }
       },
     },
   },
